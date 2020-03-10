@@ -34,10 +34,9 @@ class App extends React.Component {
               .get(follower.url, { auth })
               .then(res => {
                 console.log('Follower Request');
-                console.log(res);
-                this.setState(prevState => {
-                  return { followersData: [...prevState.followersData, res.data] }
-                });
+                this.setState(prevState => (
+                  { followersData: [...prevState.followersData, res.data] }
+                ));
               })
               .then(() => localStorage.setItem('followers', JSON.stringify(this.state.followersData)))
               .catch(err => console.log(err));
@@ -50,6 +49,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <h1>GitHub Followers</h1>
         <CardList userData={this.state.userData} followersData={this.state.followersData} />
       </div>
     );

@@ -1,15 +1,12 @@
 import React from "react";
 import Card from "./Card";
+import "./CardList.css";
 
 const CardList = ({ userData, followersData }) => {
     return (
         <div className="card-list">
-            <div className="user-list">
-                <Card user={userData} />
-            </div>
-            <div className="followers-list">
-                {followersData.map(follower => <Card key={follower.id} user={follower} />)}
-            </div>
+            <Card user={userData} />
+            {followersData.map(follower => <Card key={follower.id} user={follower} />)}
         </div>
     )
 }

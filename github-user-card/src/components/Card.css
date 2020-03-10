@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    padding: 2%;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 60%;
+}
+
+.card img {
+    height: 250px;
+    border-radius: 10px;
+}
+
+.card .user-info {
+    margin-left: 3%;
+}
+
+.card .user-info h2 {
+    margin-bottom: 0;
+}
+
+.card .user-info h3 {
+    font-style: italic;
+    margin-top: 0;
+}
+
+.card .user-info p {
+    margin: 10px 0;
+}
