@@ -1,0 +1,24 @@
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.search-wrapper form {
+    width: 50%;
+    text-align: center;
+}
+
+.search-wrapper form input {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 2%;
+    font-size: 15px;
+}
+
+.search-wrapper form button {
+    font-size: 15px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 2%;
+    margin-left: 5%;
+}
